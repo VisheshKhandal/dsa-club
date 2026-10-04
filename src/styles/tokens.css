@@ -1,0 +1,416 @@
+:root {
+  /* ========================================================================= */
+  /* DESIGN SYSTEM TOKENS (Deep Ink + Lime + Warm Amber)                      */
+  /* ========================================================================= */
+  --bg-app: #0B0F14;
+  --bg-sidebar: #0E131A;
+  --bg-surface: #121922;
+  --bg-surface-raised: #17212B;
+  --bg-surface-hover: #1B2732;
+
+  --border-subtle: #24313B;
+  --border-strong: #33424D;
+
+  --text-primary: #F3F6F4;
+  --text-secondary: #A8B4B0;
+  --text-muted: #71807C;
+
+  --accent-lime: #B7F36B;
+  --accent-lime-dark: #6B9B36;
+  --accent-teal: #58D6C0;
+  --accent-amber: #F2B84B;
+  --accent-red: #F07171;
+  --accent-blue: #7CB7FF;
+
+  --focus-ring: #D8FF9D;
+
+  /* Landing Page Semantic Design Tokens (Single Accent: Lime + Deep Slate) */
+  --landing-bg: var(--bg-app);
+  --landing-surface: var(--bg-surface);
+  --landing-surface-raised: var(--bg-surface-raised);
+  --landing-surface-hover: var(--bg-surface-hover);
+  --landing-border: var(--border-subtle);
+  --landing-border-strong: var(--border-strong);
+  --landing-brand: var(--accent-lime);
+  --landing-brand-hover: var(--accent-lime-dark);
+  --landing-brand-subtle: rgba(183, 243, 107, 0.12);
+  --landing-brand-tint: rgba(183, 243, 107, 0.06);
+  --landing-text-primary: var(--text-primary);
+  --landing-text-secondary: var(--text-secondary);
+  --landing-text-muted: var(--text-muted);
+
+  /* Authentication Semantic Design Tokens (Slate Surfaces + Lime Primary Accent) */
+  --auth-bg: var(--bg-app);
+  --auth-surface: var(--bg-surface);
+  --auth-surface-raised: var(--bg-surface-raised);
+  --auth-border: var(--border-subtle);
+  --auth-border-strong: var(--border-strong);
+  --auth-input: var(--bg-surface-raised);
+  --auth-brand: var(--accent-lime);
+  --auth-brand-hover: var(--accent-lime-dark);
+  --auth-focus: var(--accent-lime);
+  --auth-focus-ring: var(--focus-ring);
+  --auth-text-primary: var(--text-primary);
+  --auth-text-secondary: var(--text-secondary);
+  --auth-text-muted: var(--text-muted);
+  --auth-error: var(--accent-red);
+  --auth-success: var(--accent-lime);
+
+  /* Legacy variable mappings (wired to new design tokens) */
+  --color-bg: var(--bg-app);
+  --color-surface-1: var(--bg-surface);
+  --color-surface-2: var(--bg-surface-raised);
+  --color-surface-3: var(--bg-surface-hover);
+  --color-border: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+
+  /* Text */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  /* Brand — Primary Accent (Lime) */
+  --color-lime: var(--accent-lime);
+  --color-lime-dark: var(--accent-lime-dark);
+  --color-purple: var(--accent-lime);
+  --color-purple-hover: var(--accent-lime-dark);
+  --color-purple-subtle: rgba(183, 243, 107, 0.12);
+
+  /* Semantic Colors */
+  --color-blue: var(--accent-blue);
+  --color-blue-subtle: rgba(124, 183, 255, 0.12);
+  --color-green: var(--accent-lime);
+  --color-green-subtle: rgba(183, 243, 107, 0.12);
+  --color-orange: var(--accent-amber);
+  --color-orange-subtle: rgba(242, 184, 75, 0.12);
+  --color-amber: var(--accent-amber);
+  --color-amber-subtle: rgba(242, 184, 75, 0.12);
+  --color-red: var(--accent-red);
+  --color-red-subtle: rgba(240, 113, 113, 0.12);
+  --color-teal: var(--accent-teal);
+  --color-teal-subtle: rgba(88, 214, 192, 0.12);
+
+  /* Spacing Scale (4px base) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Border Radius */
+  --radius-panel: 16px;
+  --radius-card: 12px;
+  --radius-btn: 8px;
+  --radius-input: 8px;
+  --radius-badge: 9999px;
+
+  /* Transitions */
+  --transition-fast: 80ms ease-out;
+  --transition-base: 150ms ease-out;
+  --transition-slow: 250ms ease-out;
+}
+
+/* ========================================================================= */
+/* THEME OVERRIDES (Light & High Contrast) */
+/* ========================================================================= */
+
+:root[data-theme="light"],
+.light {
+  /* ========================================================================= */
+  /* CONSOLIDATED SEMANTIC LIGHT TOKENS (Crisp Slate Surfaces + Controlled Contrast) */
+  /* ========================================================================= */
+  --bg-app: #F8FAFC;
+  --bg-sidebar: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-raised: #F1F5F9;
+  --bg-surface-hover: #E2E8F0;
+
+  --border-subtle: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+
+  --accent-lime: #4D7C0F;
+  --accent-lime-dark: #3F6212;
+  --accent-teal: #0F766E;
+  --accent-amber: #B45309;
+  --accent-red: #DC2626;
+  --accent-blue: #2563EB;
+
+  --focus-ring: #65A30D;
+
+  /* Landing Page Semantic Design Tokens in Light Mode */
+  --landing-bg: var(--bg-app);
+  --landing-surface: var(--bg-surface);
+  --landing-surface-raised: var(--bg-surface-raised);
+  --landing-surface-hover: var(--bg-surface-hover);
+  --landing-border: var(--border-subtle);
+  --landing-border-strong: var(--border-strong);
+  --landing-brand: var(--accent-lime);
+  --landing-brand-hover: var(--accent-lime-dark);
+  --landing-brand-subtle: rgba(77, 124, 15, 0.12);
+  --landing-brand-tint: rgba(77, 124, 15, 0.06);
+  --landing-text-primary: var(--text-primary);
+  --landing-text-secondary: var(--text-secondary);
+  --landing-text-muted: var(--text-muted);
+
+  /* Authentication Semantic Design Tokens in Light Mode */
+  --auth-bg: var(--bg-app);
+  --auth-surface: var(--bg-surface);
+  --auth-surface-raised: var(--bg-surface-raised);
+  --auth-border: var(--border-subtle);
+  --auth-border-strong: var(--border-strong);
+  --auth-input: var(--bg-surface-raised);
+  --auth-brand: var(--accent-lime);
+  --auth-brand-hover: var(--accent-lime-dark);
+  --auth-focus: var(--accent-lime);
+  --auth-focus-ring: var(--focus-ring);
+  --auth-text-primary: var(--text-primary);
+  --auth-text-secondary: var(--text-secondary);
+  --auth-text-muted: var(--text-muted);
+  --auth-error: var(--accent-red);
+  --auth-success: var(--accent-lime);
+
+  /* Legacy variable mappings (bidirectional aliases) */
+  --color-bg: var(--bg-app);
+  --color-surface-1: var(--bg-surface);
+  --color-surface-2: var(--bg-surface-raised);
+  --color-surface-3: var(--bg-surface-hover);
+  --color-border: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+
+  /* Text */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  /* Brand Accents */
+  --color-lime: var(--accent-lime);
+  --color-lime-dark: var(--accent-lime-dark);
+  --color-purple: var(--accent-lime);
+  --color-purple-hover: var(--accent-lime-dark);
+  --color-purple-subtle: rgba(77, 124, 15, 0.12);
+
+  /* Semantic Colors */
+  --color-blue: var(--accent-blue);
+  --color-blue-subtle: rgba(37, 99, 235, 0.10);
+  --color-green: var(--accent-lime);
+  --color-green-subtle: rgba(77, 124, 15, 0.10);
+  --color-orange: var(--accent-amber);
+  --color-orange-subtle: rgba(180, 83, 9, 0.10);
+  --color-amber: var(--accent-amber);
+  --color-amber-subtle: rgba(180, 83, 9, 0.10);
+  --color-red: var(--accent-red);
+  --color-red-subtle: rgba(220, 38, 38, 0.10);
+  --color-teal: var(--accent-teal);
+  --color-teal-subtle: rgba(15, 118, 110, 0.10);
+}
+
+:root[data-contrast="high"] {
+  --border-subtle: #52527A;
+  --border-strong: #7B7B9E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #E2E8F0;
+  --text-muted: #CBD5E1;
+  --color-border: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+}
+
+:root[data-theme="light"][data-contrast="high"],
+.light[data-contrast="high"] {
+  --bg-app: #FFFFFF;
+  --bg-sidebar: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-raised: #F8FAFC;
+  --bg-surface-hover: #EDEFEF;
+  --border-subtle: #000000;
+  --border-strong: #000000;
+  --text-primary: #000000;
+  --text-secondary: #0F172A;
+  --text-muted: #334155;
+  --color-bg: var(--bg-app);
+  --color-surface-1: var(--bg-surface);
+  --color-surface-2: var(--bg-surface-raised);
+  --color-surface-3: var(--bg-surface-hover);
+  --color-border: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+}
+
+/* ========================================================================= */
+/* ACCENT OVERRIDES (Applied Globally across all buttons, nav, rings, badges) */
+/* ========================================================================= */
+
+:root[data-accent="blue"],
+[data-accent="blue"] {
+  --color-purple: #2563EB;
+  --color-purple-hover: #1D4ED8;
+  --color-purple-subtle: rgba(37, 99, 235, 0.12);
+}
+
+:root[data-accent="emerald"],
+[data-accent="emerald"] {
+  --color-purple: #059669;
+  --color-purple-hover: #047857;
+  --color-purple-subtle: rgba(5, 150, 105, 0.12);
+}
+
+:root[data-accent="amber"],
+[data-accent="amber"] {
+  --color-purple: #D97706;
+  --color-purple-hover: #B45309;
+  --color-purple-subtle: rgba(217, 119, 6, 0.12);
+}
+
+:root[data-accent="rose"],
+[data-accent="rose"] {
+  --color-purple: #E11D48;
+  --color-purple-hover: #BE123C;
+  --color-purple-subtle: rgba(225, 29, 72, 0.12);
+}
+
+:root[data-accent="cyan"],
+[data-accent="cyan"] {
+  --color-purple: #0891B2;
+  --color-purple-hover: #0E7490;
+  --color-purple-subtle: rgba(8, 145, 178, 0.12);
+}
+
+/* ========================================================================= */
+/* BORDER RADIUS OVERRIDES */
+/* ========================================================================= */
+
+:root[data-radius="sharp"] {
+  --radius-card: 4px;
+  --radius-btn: 4px;
+  --radius-badge: 2px;
+  --radius-input: 4px;
+}
+
+:root[data-radius="round"] {
+  --radius-card: 20px;
+  --radius-btn: 12px;
+  --radius-badge: 9999px;
+  --radius-input: 12px;
+}
+
+/* ========================================================================= */
+/* DENSITY OVERRIDES */
+/* ========================================================================= */
+
+:root[data-density="compact"] {
+  --space-md: 12px;
+  --space-lg: 18px;
+  --space-xl: 24px;
+}
+
+:root[data-density="spacious"] {
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-xl: 40px;
+}
+
+/* ========================================================================= */
+/* UI SCALE OVERRIDES */
+/* ========================================================================= */
+
+:root[data-ui-scale="small"] {
+  font-size: 14px;
+}
+
+:root[data-ui-scale="large"] {
+  font-size: 17.5px;
+}
+
+/* ========================================================================= */
+/* MOTION OVERRIDES */
+/* ========================================================================= */
+
+@media (prefers-reduced-motion: reduce), (update: none) {
+  :root {
+    --transition-fast: 0.001ms !important;
+    --transition-base: 0.001ms !important;
+    --transition-slow: 0.001ms !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root[data-motion="reduced"] *,
+:root[data-motion="minimal"] * {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Typography System */
+.text-display {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.text-page-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.text-section {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.text-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.text-body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.text-caption {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.text-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}

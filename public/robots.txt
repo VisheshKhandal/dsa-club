@@ -1,0 +1,12 @@
+# DSA Club robots.txt
+# Allow all crawlers to access the site
+User-agent: *
+Allow: /
+
+# Disallow authenticated and internal areas
+Disallow: /dashboard/
+Disallow: /studio/
+Disallow: /api/
+Disallow: /onboarding/
+Disallow: /forgot-password/
+Disallow: /reset-password/

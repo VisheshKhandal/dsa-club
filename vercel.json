@@ -1,0 +1,7 @@
+{
+  "crons": [
+    { "path": "/api/cron/revisions", "schedule": "0 * * * *" },
+    { "path": "/api/cron/deliveries", "schedule": "*/5 * * * *" }
+  ]
+}
+
